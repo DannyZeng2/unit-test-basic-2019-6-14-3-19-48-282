@@ -67,8 +67,7 @@ class ExpenseServiceTest {
         // given
         Project project = new Project(ProjectType.UNEXPECTED_PROJECT_TYPE,"Project C");
 
-        // when
-        // then
+        // when then
         Assertions.assertThrows(UnexpectedProjectTypeException.class,()->{
             ExpenseService.getExpenseCodeByProjectTypeAndName(project);
         });
